@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="{{avatarUrl}}"></image>
+  <text>Hello,{{nickName}}</text>
+  <button bindtap="startPage">开启小程序之旅</button>
+</view>

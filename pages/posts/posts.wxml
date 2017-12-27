@@ -1,0 +1,26 @@
+<import src="posts-item/posts-item-template.wxml" />
+<view class="container">
+<!--滑块-->
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <swiper-item>
+    <image src="/images/iqiyi.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/vr.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/wx.png"></image>
+  </swiper-item>
+</swiper>
+
+
+<view class="article-list">
+  <block wx:for="{{dataList}}" wx:key="index">
+    <view catchtap="getPostDetail" data-postid="{{item.postId}}">
+      <template is="articleName" data="{{...item}}"></template>
+    </view>
+  </block>
+
+</view>
+
+</view>

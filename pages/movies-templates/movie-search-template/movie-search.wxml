@@ -1,0 +1,8 @@
+<import src="../movie-item-template/movie-item.wxml"/>
+<template name="movieSearch">
+ <scroll-view class="container" scroll-y="true" scroll-x="false">
+    <view class="movie-item" wx:for="{{movies}}" wx:key="index">
+       <template is="movieItem" data="{{...item}}"/>
+    </view>
+  </scroll-view>
+</template>

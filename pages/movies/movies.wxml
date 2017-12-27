@@ -1,0 +1,30 @@
+<import src="../movies-templates/movie-list-template/movie-list.wxml" />
+<import src="../movies-templates/movie-search-template/movie-search.wxml" />
+
+<view class="search">
+  <icon type="search" size="13" color="#405f80" class="search-icon"></icon>
+  <input type="text" placeholder='搜索电影' bindfocus="bindInputFocus" bindblur="bindInputBlur"/>
+  <icon type="clear" size="15" class="search-clear" wx:if="{{searchShow}}" catchtap="onCloseTap"></icon>
+</view>
+
+
+<view class="container" wx:if="{{!searchShow}}">
+
+  <view class="movies-template">
+  <template is="movieList" data="{{...inTheaters}}"></template>
+  </view>
+
+  <view class="movies-template">
+  <template is="movieList" data="{{...comingSoon}}"></template>
+  </view>
+
+  <view class="movies-template">
+  <template is="movieList" data="{{...top250}}"></template>
+  </view>
+  
+</view> 
+
+
+<view class="search-panel" wx:if="{{searchShow}}">
+  <template is="movieSearch" data="{{...searchResult}}" />
+</view>

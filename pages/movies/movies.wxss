@@ -1,0 +1,27 @@
+@import "../movies-templates/movie-list-template/movie-list.wxss";
+@import "../movies-templates/movie-search-template/movie-search.wxss";
+
+.search{
+  background-color: #f2f2f2;
+  height:80rpx;
+  display: flex;
+  align-items: center;
+}
+ .search-icon{
+  margin:0 auto;
+}
+.search input{
+  width:600rpx;
+  font-size:28rpx;
+}
+.search-clear{
+  margin-right:20rpx;
+}
+
+.container{
+  background-color: #f2f2f2;
+}
+.movies-template{
+  margin-bottom:30rpx;
+}
+

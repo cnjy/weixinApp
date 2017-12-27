@@ -1,0 +1,22 @@
+<template name="articleName">
+  <view class="article-item">
+    <view class="article-avatar-date">
+      <image class="article-avatar" src="{{avatar}}"></image>
+      <text class="article-date">{{date}}</text>
+    </view>
+
+    <text class="article-title">{{title}}</text>
+
+    <image class="article-image" src="{{imgSrc}}"></image>
+
+    <text class="article-content">{{content}}</text>
+
+    <view class="article-link">
+      <image src="/images/icon/chat1.png" class="article-link-image"></image>
+      <text class="article-link-text">{{collection}}
+      </text>
+       <image src="/images/icon/view.png" class="article-link-image"></image>
+      <text class="article-link-text">{{collection}}</text>
+    </view>  
+  </view>
+</template>
